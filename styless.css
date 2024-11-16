@@ -1,0 +1,27 @@
+/* Styles for the main section */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Styles for the aside section */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Styles for the footer */
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
