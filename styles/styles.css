@@ -1,10 +1,4 @@
-/* Styles for the main section */
-main img {
-    width: 150px;
-    height: auto;
-}
-
-/* Styles for the aside section */
+/* Styles for the aside element */
 aside {
     width: 300px;
     margin: 20px auto;
@@ -14,12 +8,25 @@ aside {
     color: #333;
 }
 
+/* Style for the image inside the aside */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Styles for the footer */
+/* More specific main image style */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Optional for a circular profile picture */
+}
+
+/* Paragraph padding set to 0 */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
 footer {
     margin-top: 20px;
     border-top: 2px solid #ccc;
