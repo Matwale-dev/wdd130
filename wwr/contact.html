@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Whitewater Rafting Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Reach out to us via the contact details below or use the form to send us a message.</p>
+        </section>
+
+        <section>
+            <h2>Our Contact Information</h2>
+            <address>
+                <p><strong>Address:</strong> 123 River Rapids Road, Adventure City, AC 12345</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> <a href="mailto:info@rafting.com">info@rafting.com</a></p>
+            </address>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509!2d-122.419416!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e6fbaaa04f5%3A0x4bbdf45c17e5c5cb!2sAdventure%20City!5e0!3m2!1sen!2sus!4v1600000000" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <figcaption>Melvin Otieno - Adventure Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <figcaption>Petronilah Wakupe - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>Emily Anyona - Reservations Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Your Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Whitewater Rafting | Designed by Thomas Matwale</p>
+        <a href="wireframe.html">View Wireframe Design</a>
+    </footer>
+</body>
+
+</html>
