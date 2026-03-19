@@ -172,7 +172,6 @@ nav a:hover {
     border-radius: 12px;
     border: 3px solid var(--secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    shape-outside: margin-box;
     /* text wraps nicely around image */
 }
 
