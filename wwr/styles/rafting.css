@@ -134,13 +134,17 @@ nav a:hover {
     text-align: center;
     background-color: rgba(26, 95, 122, 0.85);
     /* primary-color with opacity */
-    color: #fff;
+    color: white;
+    /* or #fff or #ffffff */
     padding: 1rem 2rem;
     font-size: 2.8rem;
     letter-spacing: 2px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
-    /* modern touch, safe fallback */
+    font-weight: bold;
+    /* Helps with readability */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Article overlay inside hero */
