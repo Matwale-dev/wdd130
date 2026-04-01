@@ -56,6 +56,19 @@ h1 {
     font-size: 2.5rem;
 }
 
+/* H1 styling for Contact Us page - ensures proper positioning and company name visibility */
+main h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0 1rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+    width: 100%;
+}
+
 h2 {
     font-size: 2rem;
     border-bottom: 2px solid var(--secondary-color);
@@ -577,23 +590,34 @@ footer p {
     accent-color: var(--primary-color);
 }
 
-/* Checkbox label */
-.checkbox-label {
+/* Checkbox wrapper styling - UPDATED for better structure and accessibility */
+.checkbox-wrapper {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    font-weight: normal;
-    cursor: pointer;
-    background: #f7f2ea;
-    padding: 0.7rem 1rem;
-    border-radius: 40px;
+    gap: 0.75rem;
     margin: 0.5rem 0;
+    padding: 0.7rem 1rem;
+    background: #f7f2ea;
+    border-radius: 40px;
+    transition: background 0.2s ease;
 }
 
-.checkbox-label input {
+.checkbox-wrapper:hover {
+    background: #efe4d8;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
     width: 1.2rem;
     height: 1.2rem;
+    cursor: pointer;
     accent-color: var(--secondary-color);
+}
+
+.checkbox-wrapper label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+    color: var(--accent1-color);
 }
 
 /* Submit button - visually distinct, clear call to action */
@@ -771,5 +795,9 @@ footer p {
 
     .map-container iframe {
         height: 220px;
+    }
+
+    .checkbox-wrapper {
+        padding: 0.6rem 0.8rem;
     }
 }

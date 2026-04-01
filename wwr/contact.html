@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Updated meta description and title for Contact Us page -->
     <meta name="description"
-      content="Get in touch with Wild Waters Rafting. Find our contact information, location map, employee profiles, and send us a message for general inquiries, reservations, or suggestions.">
+      content="Get in touch with White Water Rafting. Find our contact information, location map, employee profiles, and send us a message for general inquiries, reservations, or suggestions.">
     <meta name="author" content="Thomas Matwale">
     <title>Wild Waters Rafting | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- Rafting site logo - consistent with all pages -->
-        <img src="images/wwr-logo.png" alt="Wild Waters Rafting logo – a stylized wave and paddle"
+        <img src="images/wwr-logo.png" alt="White Water Rafting logo – a stylized wave and paddle"
           width="230" height="150">
         <!-- Primary navigation - same structure as about.html -->
         <nav>
@@ -29,7 +29,9 @@
     </header>
 
     <main>
-        <!-- Contact Us main content based on wireframe layout -->
+        <!-- H1 element with rafting company name and contact context -->
+        <h1>Contact White Water Rafting</h1>
+
         <!-- Two column layout: left column (company info + form) and right column (map + employee profiles) -->
         <div class="contact-grid">
             <!-- Left column: company details and contact form -->
@@ -38,13 +40,13 @@
                 <div class="company-details">
                     <h2>We Are Here to Serve You</h2>
                     <address>
-                        <strong>Wild Waters Rafting Company</strong><br>
+                        <strong>White Water Rafting Company</strong><br>
                         66908 Main River<br>
                         Sagana River, Kenya<br>
                         <br>
-                        <strong>Phone:</strong> +254 722 309 206 <br>
+                        <strong>Phone:</strong> +254 722 309 206<br>
                         <strong>Email:</strong> <a
-                          href="mailto:info@whitewater.com">info@wildwatersrafting.org</a>
+                          href="mailto:info@wildwatersrafting.org">info@whitewaterrafting.org</a>
                     </address>
                 </div>
 
@@ -59,20 +61,23 @@
                     <input type="email" id="email" name="email" placeholder="Your email address"
                       required>
 
-                    <!-- Message Purpose: radio buttons -->
+                    <!-- Message Purpose: radio buttons with proper id attributes -->
                     <fieldset class="purpose-group">
                         <legend>Message Purpose:</legend>
-                        <label>
-                            <input type="radio" name="purpose" value="General Inquiry" required>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose"
+                              value="General Inquiry" required>
                             General Inquiry
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="Reservation Question">
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="Reservation Question">
                             Reservation Question
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="Website Suggestion"> Website
-                            Suggestion
+                        <label for="purpose-suggestion">
+                            <input type="radio" id="purpose-suggestion" name="purpose"
+                              value="Website Suggestion">
+                            Website Suggestion
                         </label>
                     </fieldset>
 
@@ -80,11 +85,13 @@
                     <textarea id="message" name="message" rows="5"
                       placeholder="Type your message here..."></textarea>
 
-                    <!-- Checkbox for newsletter subscription -->
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe
-                        me to the monthly newsletter
-                    </label>
+                    <!-- Checkbox for newsletter subscription with proper id and wrapper -->
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="newsletter-subscribe" name="newsletter"
+                          value="subscribe">
+                        <label for="newsletter-subscribe">Please subscribe me to the monthly
+                            newsletter</label>
+                    </div>
 
                     <!-- Submit button with descriptive text -->
                     <button type="submit" class="submit-btn">Get in Touch!</button>
@@ -96,13 +103,13 @@
                 <!-- Embedded Google Map: location of Wild Waters Rafting Company -->
                 <div class="map-container">
                     <h3>Find Us Here</h3>
-                    <!-- Google Map embed for Sagana River, Kenya area (placeholder location) -->
+                    <!-- Google Map embed for Rapids Camp Sagana - White Water Rafting Centre -->
                     <!-- Removed inline style="border:0" as required, any styling will be handled in CSS -->
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127697.50313063573!2d37.06795035!3d-0.68202265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289b7b4e2b8e2b%3A0x2e5d8f7a3c9b1a4d!2sSagana%2C%20Kenya!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510616.21713969175!2d36.68840551244175!3d-1.017501088805404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289f1b277fc859%3A0xedcd47f73cffdb36!2sRapids%20Camp%20Sagana%20-%20White%20Water%20Rafting%20Centre!5e0!3m2!1sen!2ske!4v1775057916514!5m2!1sen!2ske"
                       width="100%" height="280" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"
-                      title="Google Map showing Wild Waters Rafting location in Sagana River, Kenya">
+                      title="Google Map showing White Water Rafting location in Sagana River, Kenya">
                     </iframe>
                 </div>
 
@@ -136,7 +143,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Wild Waters Rafting | Thomas Matwale</p>
+        <p>© 2026 White Water Rafting | Thomas Matwale</p>
         <!-- Social media navigation with icon images - consistent with about.html -->
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
