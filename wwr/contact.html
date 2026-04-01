@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated meta description and title for Contact Us page -->
+    <meta name="description"
+      content="Get in touch with Wild Waters Rafting. Find our contact information, location map, employee profiles, and send us a message for general inquiries, reservations, or suggestions.">
+    <meta name="author" content="Thomas Matwale">
+    <title>Wild Waters Rafting | Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <!-- Rafting site logo - consistent with all pages -->
+        <img src="images/wwr-logo.png" alt="Wild Waters Rafting logo – a stylized wave and paddle"
+          width="230" height="150">
+        <!-- Primary navigation - same structure as about.html -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Us main content based on wireframe layout -->
+        <!-- Two column layout: left column (company info + form) and right column (map + employee profiles) -->
+        <div class="contact-grid">
+            <!-- Left column: company details and contact form -->
+            <div class="contact-info-form">
+                <!-- Company information block -->
+                <div class="company-details">
+                    <h2>We Are Here to Serve You</h2>
+                    <address>
+                        <strong>Wild Waters Rafting Company</strong><br>
+                        66908 Main River<br>
+                        Sagana River, Kenya<br>
+                        <br>
+                        <strong>Phone:</strong> +254 722 309 <br>
+                        <strong>Email:</strong> <a
+                          href="mailto:info@whitewater.com">info@wildwatersrafting.org</a>
+                    </address>
+                </div>
+
+                <!-- HTML Form: asks for name, email, purpose (radio), message, newsletter checkbox, submit button -->
+                <form class="contact-form" action="#" method="post">
+                    <h3>Send us a message</h3>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address"
+                      required>
+
+                    <!-- Message Purpose: radio buttons -->
+                    <fieldset class="purpose-group">
+                        <legend>Message Purpose:</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="General Inquiry" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="Reservation Question">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="Website Suggestion"> Website
+                            Suggestion
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type your message here..."></textarea>
+
+                    <!-- Checkbox for newsletter subscription -->
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe
+                        me to the monthly newsletter
+                    </label>
+
+                    <!-- Submit button with descriptive text -->
+                    <button type="submit" class="submit-btn">Get in Touch!</button>
+                </form>
+            </div>
+
+            <!-- Right column: embedded Google Map (no inline border style) + Employee profiles -->
+            <div class="contact-map-profiles">
+                <!-- Embedded Google Map: location of Wild Waters Rafting Company -->
+                <div class="map-container">
+                    <h3>Find Us Here</h3>
+                    <!-- Google Map embed for Sagana River, Kenya area (placeholder location) -->
+                    <!-- Removed inline style="border:0" as required, any styling will be handled in CSS -->
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127697.50313063573!2d37.06795035!3d-0.68202265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289b7b4e2b8e2b%3A0x2e5d8f7a3c9b1a4d!2sSagana%2C%20Kenya!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                      width="100%" height="280" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Google Map showing Wild Waters Rafting location in Sagana River, Kenya">
+                    </iframe>
+                </div>
+
+                <!-- Employee Profile section: three employee profiles with images and captions/titles -->
+                <div class="employee-profiles">
+                    <h3>Meet Our Expert Guides</h3>
+                    <div class="profiles-container">
+                        <figure class="profile">
+                            <img src="images/employee1.jpg"
+                              alt="Risper Thuram - Lead Guide and Founder" width="180" height="180">
+                            <figcaption><strong>Risper Thuram</strong><br>Founder & Head Guide
+                            </figcaption>
+                        </figure>
+                        <figure class="profile">
+                            <img src="images/employee2.jpg"
+                              alt="James Carter - Senior Safety Instructor" width="180"
+                              height="180">
+                            <figcaption><strong>James Carter</strong><br>Safety & Rescue Specialist
+                            </figcaption>
+                        </figure>
+                        <figure class="profile">
+                            <img src="images/employee3.jpg"
+                              alt="Elena Rodriguez - Expedition Leader" width="180" height="180">
+                            <figcaption><strong>Elena Rodriguez</strong><br>Expedition Coordinator
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Wild Waters Rafting | Thomas Matwale</p>
+        <!-- Social media navigation with icon images - consistent with about.html -->
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.svg" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-icon.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
