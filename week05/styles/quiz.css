@@ -1,0 +1,238 @@
+/* quiz.css - Modern, accessible styling for HTML/CSS quiz form */
+
+/* CSS Reset / Box sizing rules */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+}
+
+/* Main quiz container – single column, centered, uniform width */
+.quiz-container {
+    max-width: 720px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+    padding: 2rem 1.8rem;
+    transition: all 0.2s ease;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #1e2a3e;
+    border-left: 6px solid #3b82f6;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.quiz-intro {
+    color: #4b5563;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.75rem;
+}
+
+/* Form layout: single column, uniform spacing */
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+/* Each form group – consistent vertical spacing */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Labels: clear, readable, consistent weight */
+label {
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 0.95rem;
+    letter-spacing: -0.2px;
+    display: inline-block;
+    margin-bottom: 0.1rem;
+}
+
+/* Shared input, select, textarea styles – uniform width and padding */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fefefe;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    color: #0f172a;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* Different sizing for textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Focus styles for accessibility and visual feedback */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background-color: #ffffff;
+}
+
+/* Placeholder styling */
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Select dropdown custom appearance (clean, consistent) */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23334155' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Remove spinner arrows from number input for cleaner look */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Submit button styling – uniform width and consistent spacing */
+.submit-group {
+    margin-top: 0.75rem;
+}
+
+.submit-btn {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.85rem 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-family: inherit;
+}
+
+.submit-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px -6px rgba(59, 130, 246, 0.5);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+    background-color: #1d4ed8;
+}
+
+/* Optional: add a small visual for required fields (soft indicator) */
+.form-group:has([required]) label::after {
+    content: " *";
+    color: #ef4444;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Improve spacing for the non-selectable placeholder option */
+select option[disabled] {
+    color: #9ca3af;
+}
+
+/* Consistent border radius for interactive elements */
+input,
+select,
+textarea,
+.submit-btn {
+    border-radius: 0.75rem;
+}
+
+/* Make sure the single column layout stays uniform on smaller screens */
+@media (max-width: 560px) {
+    .quiz-container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.55rem;
+    }
+
+    .form-group {
+        gap: 0.4rem;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        padding: 0.65rem 0.9rem;
+    }
+}
+
+/* Accessibility: high contrast focus outline for keyboard navigation */
+:focus-visible {
+    outline: 2px solid #1e40af;
+    outline-offset: 2px;
+    border-radius: 0.5rem;
+}
+
+/* Small decorative touch for better visual rhythm */
+.quiz-container {
+    animation: fadeSlideUp 0.3s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

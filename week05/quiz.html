@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>📝 HTML & CSS Knowledge Quiz</h1>
+        <p class="quiz-intro">Test your understanding of web fundamentals. Fill in the answers and
+            submit!</p>
+
+        <form action="#" method="post" id="quiz-form">
+            <!-- Question 1: text input (fill in the blank) -->
+            <div class="form-group">
+                <label for="q1">1. What does the acronym "HTML" stand for? (Fill in the
+                    blank)</label>
+                <input type="text" id="q1" name="q1" placeholder="Type your answer here" required>
+            </div>
+
+            <!-- Question 2: textarea (short answer) -->
+            <div class="form-group">
+                <label for="q2">2. Briefly explain the purpose of the CSS box model. (Short
+                    answer)</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Write your explanation..."
+                  required></textarea>
+            </div>
+
+            <!-- Question 3: select element (dropdown) with at least 3 options + non-selectable placeholder -->
+            <div class="form-group">
+                <label for="q3">3. Which CSS property is used to change the background color of an
+                    element?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose one ...</option>
+                    <option value="color">color</option>
+                    <option value="bgcolor">bgcolor</option>
+                    <option value="background-color">background-color</option>
+                    <option value="background">background (but background-color is more specific)
+                    </option>
+                </select>
+            </div>
+
+            <!-- Question 4: number type input (integer answer) -->
+            <div class="form-group">
+                <label for="q4">4. How many heading levels (from &lt;h1&gt; to &lt;h6&gt;) are
+                    defined in HTML? (Enter a number)</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" step="1"
+                  placeholder="e.g., 6" required>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-group submit-group">
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
