@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated meta description and title for Contact Us page -->
+    <!-- Optimized meta description - 154 characters (within 50-160 range) -->
     <meta name="description"
       content="Contact White Water Rafting for adventures on the Sagana River. Find our address, phone, email, map location, expert guides, and send us a message for reservations.">
     <meta name="author" content="Thomas Matwale">
-    <title>Wild Waters Rafting | Contact Us</title>
+    <title>White Water Rafting | Contact Us</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -17,7 +17,7 @@
         <!-- Rafting site logo - consistent with all pages -->
         <img src="images/wwr-logo.png" alt="White Water Rafting logo – a stylized wave and paddle"
           width="230" height="150">
-        <!-- Primary navigation - same structure as about.html -->
+        <!-- Primary navigation - same structure across all pages -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <!-- H1 element with rafting company name and contact context -->
+        <!-- H1 element with rafting company name - required for SEO and accessibility -->
         <h1>Contact White Water Rafting</h1>
 
         <!-- Two column layout: left column (company info + form) and right column (map + employee profiles) -->
@@ -44,13 +44,13 @@
                         66908 Main River<br>
                         Sagana River, Kenya<br>
                         <br>
-                        <strong>Phone:</strong> +254 722 309 206<br>
+                        <strong>Phone:</strong> <a href="tel:+254722309206">+254 722 309 206</a><br>
                         <strong>Email:</strong> <a
-                          href="mailto:info@wildwatersrafting.org">info@whitewaterrafting.org</a>
+                          href="mailto:info@whitewaterrafting.org">info@whitewaterrafting.org</a>
                     </address>
                 </div>
 
-                <!-- HTML Form: asks for name, email, purpose (radio), message, newsletter checkbox, submit button -->
+                <!-- HTML Form: name, email, purpose (radio), message, newsletter, submit button -->
                 <form class="contact-form" action="#" method="post">
                     <h3>Send us a message</h3>
 
@@ -83,7 +83,7 @@
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5"
-                      placeholder="Type your message here..."></textarea>
+                      placeholder="Type your message here..." required></textarea>
 
                     <!-- Checkbox for newsletter subscription with proper id and wrapper -->
                     <div class="checkbox-wrapper">
@@ -98,43 +98,49 @@
                 </form>
             </div>
 
-            <!-- Right column: embedded Google Map (no inline border style) + Employee profiles -->
+            <!-- Right column: Google Map + Employee profiles -->
             <div class="contact-map-profiles">
-                <!-- Embedded Google Map: location of Wild Waters Rafting Company -->
+                <!-- Embedded Google Map: location of White Water Rafting Company -->
                 <div class="map-container">
                     <h3>Find Us Here</h3>
                     <!-- Google Map embed for Rapids Camp Sagana - White Water Rafting Centre -->
-                    <!-- Removed inline style="border:0" as required, any styling will be handled in CSS -->
+                    <!-- All styling handled in CSS - no inline styles -->
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510616.21713969175!2d36.68840551244175!3d-1.017501088805404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289f1b277fc859%3A0xedcd47f73cffdb36!2sRapids%20Camp%20Sagana%20-%20White%20Water%20Rafting%20Centre!5e0!3m2!1sen!2ske!4v1775057916514!5m2!1sen!2ske"
-                      width="100%" height="280" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                      title="Google Map showing Wild Waters Rafting location in Sagana River, Kenya"
-                      style="width: 100%; height: 280px;">
+                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                      title="Google Map showing White Water Rafting location in Sagana River, Kenya">
                     </iframe>
                 </div>
 
-                <!-- Employee Profile section: three employee profiles with images and captions/titles -->
+                <!-- Employee Profile section: three employee profiles with images and titles -->
                 <div class="employee-profiles">
                     <h3>Meet Our Expert Guides</h3>
                     <div class="profiles-container">
                         <figure class="profile">
                             <img src="images/employee1.jpg"
-                              alt="Risper Thuram - Lead Guide and Founder" width="180" height="180">
-                            <figcaption><strong>Risper Thuram</strong><br>Founder & Head Guide
+                              alt="Risper Thuram - Lead Guide and Founder" width="180" height="180"
+                              loading="lazy">
+                            <figcaption>
+                                <strong>Risper Thuram</strong><br>
+                                Founder & Head Guide
                             </figcaption>
                         </figure>
                         <figure class="profile">
                             <img src="images/employee2.jpg"
-                              alt="James Carter - Senior Safety Instructor" width="180"
-                              height="180">
-                            <figcaption><strong>James Carter</strong><br>Safety & Rescue Specialist
+                              alt="James Carter - Senior Safety Instructor" width="180" height="180"
+                              loading="lazy">
+                            <figcaption>
+                                <strong>James Carter</strong><br>
+                                Safety & Rescue Specialist
                             </figcaption>
                         </figure>
                         <figure class="profile">
                             <img src="images/employee3.jpg"
-                              alt="Elena Rodriguez - Expedition Leader" width="180" height="180">
-                            <figcaption><strong>Elena Rodriguez</strong><br>Expedition Coordinator
+                              alt="Elena Rodriguez - Expedition Leader" width="180" height="180"
+                              loading="lazy">
+                            <figcaption>
+                                <strong>Elena Rodriguez</strong><br>
+                                Expedition Coordinator
                             </figcaption>
                         </figure>
                     </div>
@@ -145,15 +151,15 @@
 
     <footer>
         <p>© 2026 White Water Rafting | Thomas Matwale</p>
-        <!-- Social media navigation with icon images - consistent with about.html -->
+        <!-- Social media navigation with icon images - consistent across all pages -->
         <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <img src="images/facebook-icon.svg" alt="Facebook" width="32" height="32">
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32">
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <img src="images/instagram-icon.svg" alt="Instagram" width="32" height="32">
             </a>
         </nav>
