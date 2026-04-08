@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Explore Wild Waters Rafting's epic white water trips: half-day, full-day, and multi-day expeditions. Book your adventure today!">
+    <meta name="author" content="Thomas Matwale">
+    <title>Wild Waters Rafting | Trips & Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <!-- Rafting site logo -->
+        <img src="images/wwr-logo.png" alt="Wild Waters Rafting logo – a stylized wave and paddle"
+          width="230" height="150">
+        <!-- Primary navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero / page intro section for trips -->
+        <div class="trips-hero">
+            <div class="trips-hero-overlay">
+                <h1>Choose Your Adventure</h1>
+                <p>From family-friendly floats to adrenaline-pumping rapids — we have the perfect
+                    trip for you</p>
+            </div>
+        </div>
+
+        <!-- Call to Action: Contact Us -->
+        <section class="cta-trips-section">
+            <div class="cta-trips-content">
+                <h2>Have Questions or Ready to Book?</h2>
+                <p>Our expert guides are here to help you pick the ideal trip. Reach out for group
+                    discounts, custom dates, and more!</p>
+                <a href="contact.html" class="cta-button cta-trips-button">Contact Our Team →</a>
+            </div>
+        </section>
+
+        <!-- Three detailed trip descriptions with photos - using CSS Grid for creative layout -->
+        <section class="featured-trips">
+            <h2 class="section-heading-trips">Signature River Expeditions</h2>
+            <div class="trips-grid-container">
+                <!-- Trip 1: Half-Day Thrill -->
+                <div class="trip-card">
+                    <div class="trip-img-wrapper">
+                        <img src="images/splashing-class-3.jpg"
+                          alt="Rafting boat splashing through class III rapids on sunny day"
+                          width="600" height="400">
+                    </div>
+                    <div class="trip-details">
+                        <h3>Half-Day Rush</h3>
+                        <p class="trip-duration">⏱ 3-4 hours | Class III-III+</p>
+                        <p>Perfect for beginners and time-crunched adventurers. Navigate the famous
+                            "Roaring Falls" and "Whirlpool Corner" with a professional guide.
+                            Includes all gear, safety briefing, and riverside snacks. <strong>High
+                                energy, big smiles!</strong></p>
+                        <ul class="trip-highlights">
+                            <li>✔ 8 miles of exciting whitewater</li>
+                            <li>✔ Small groups (max 8 per raft)</li>
+                            <li>✔ Free action photos available</li>
+                        </ul>
+                        <div class="trip-price">From $89 / person</div>
+                    </div>
+                </div>
+
+                <!-- Trip 2: Full-Day Expedition -->
+                <div class="trip-card">
+                    <div class="trip-img-wrapper">
+                        <img src="images/paddling-canyon.jpg"
+                          alt="Rafting team paddling through huge waves and canyon walls"
+                          width="600" height="400">
+                    </div>
+                    <div class="trip-details">
+                        <h3>Full-Day Canyon Challenge</h3>
+                        <p class="trip-duration">⏱ 7-8 hours | Class IV rapids + lunch</p>
+                        <p>For those seeking a true wilderness immersion. Tackle continuous class IV
+                            drops, swim in emerald pools, and enjoy a riverside gourmet lunch. Our
+                            most popular trip among return guests. <em>Advanced booking
+                                required.</em></p>
+                        <ul class="trip-highlights">
+                            <li>✔ 18 miles of untamed river</li>
+                            <li>✔ Complimentary wetsuit & splash jacket</li>
+                            <li>✔ Riverside BBQ lunch included</li>
+                        </ul>
+                        <div class="trip-price">From $159 / person</div>
+                    </div>
+                </div>
+
+                <!-- Trip 3: Multi-Day Expedition -->
+                <div class="trip-card">
+                    <div class="trip-img-wrapper">
+                        <img src="images/camping.jpg"
+                          alt="Camping by the river at sunset with rafts on shore" width="600"
+                          height="400">
+                    </div>
+                    <div class="trip-details">
+                        <h3>3-Day Ultimate Wilderness</h3>
+                        <p class="trip-duration">⏱ 3 days / 2 nights | Class III-IV & camping</p>
+                        <p>The ultimate white water journey. Paddle through remote canyons, camp
+                            under starry skies, and experience untouched nature. Includes all
+                            camping gear, meals, permits, and professional guides.
+                            <strong>Life-changing adventure.</strong>
+                        </p>
+                        <ul class="trip-highlights">
+                            <li>✔ 40+ miles of river & side hikes</li>
+                            <li>✔ Hot meals & professional river kitchen</li>
+                            <li>✔ Geology & wildlife interpretation</li>
+                        </ul>
+                        <div class="trip-price">From $499 / person</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table outlining all available trips with relevant information -->
+        <section class="trips-table-section">
+            <h2 class="section-heading-trips">Complete Trip Comparison</h2>
+            <div class="table-responsive">
+                <table class="trips-table">
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Distance</th>
+                            <th>Minimum Age</th>
+                            <th>Price (per person)</th>
+                            <th>Highlights</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Trip Name">Half-Day Rush</td>
+                            <td data-label="Duration">3-4 hours</td>
+                            <td data-label="Difficulty">Class III / III+</td>
+                            <td data-label="Distance">8 miles</td>
+                            <td data-label="Minimum Age">12+</td>
+                            <td data-label="Price">$89</td>
+                            <td data-label="Highlights">Snacks, guide, photos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Full-Day Canyon Challenge</td>
+                            <td data-label="Duration">7-8 hours</td>
+                            <td data-label="Difficulty">Class IV</td>
+                            <td data-label="Distance">18 miles</td>
+                            <td data-label="Minimum Age">14+</td>
+                            <td data-label="Price">$159</td>
+                            <td data-label="Highlights">Lunch, wetsuit, pro photos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">3-Day Ultimate Wilderness</td>
+                            <td data-label="Duration">3 days / 2 nights</td>
+                            <td data-label="Difficulty">Class III-IV</td>
+                            <td data-label="Distance">40+ miles</td>
+                            <td data-label="Minimum Age">16+</td>
+                            <td data-label="Price">$499</td>
+                            <td data-label="Highlights">Camping gear, meals, stars</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Family Float & Splash</td>
+                            <td data-label="Duration">2 hours</td>
+                            <td data-label="Difficulty">Class I-II</td>
+                            <td data-label="Distance">3 miles</td>
+                            <td data-label="Minimum Age">5+</td>
+                            <td data-label="Price">$49</td>
+                            <td data-label="Highlights">Kid-friendly, swimming stops</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Trip Name">Corporate Team Builder</td>
+                            <td data-label="Duration">5 hours</td>
+                            <td data-label="Difficulty">Class III</td>
+                            <td data-label="Distance">12 miles</td>
+                            <td data-label="Minimum Age">18+ (work groups)</td>
+                            <td data-label="Price">$129 (group rates)</td>
+                            <td data-label="Highlights">Team challenges, BBQ lunch</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="table-note">* All trips include certified guides, life jackets, helmets, and
+                safety equipment. Prices subject to seasonal demand. Group discounts available for
+                6+ people.</p>
+        </section>
+
+        <!-- Secondary Call to Action: Encouragement to Contact (extra touch) -->
+        <div class="bottom-cta">
+            <div class="bottom-cta-inner">
+                <h3>Ready to reserve your seat?</h3>
+                <a href="contact.html" class="cta-button small-cta">Get in Touch →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Wild Waters Rafting | Thomas Matwale</p>
+        <!-- Social media navigation with icon images wrapped in anchor tags -->
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-icon.svg" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="images/instagram-icon.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
